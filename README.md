@@ -8,6 +8,15 @@ Corre dentro de **Claude Code**, usando tu propia suscripción de Claude. No
 necesitas API keys, no necesitas montar ningún servidor: instalas Claude
 Code, abres esta carpeta, y listo.
 
+## Por qué se llama Aion
+
+**Aion** (griego *Αἰών*) es la deidad del **tiempo eterno y cíclico** —la vida
+que se renueva ciclo tras ciclo—, a diferencia de *Chronos*, el tiempo lineal
+del reloj. El nombre encaja con la idea del proyecto: Aion no te apura minuto a
+minuto; trabaja sobre tus **ciclos diarios** y tu **evolución en el tiempo**.
+Cada día es una vuelta del ciclo —descansas, entrenas, aprendes— y Aion te ayuda
+a que cada vuelta sume a la siguiente.
+
 ## Qué es Aion
 
 Aion es un agente personal que cada mañana revisa cómo dormiste, qué toca en
