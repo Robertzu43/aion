@@ -95,3 +95,19 @@ La carpeta `data.ejemplo/` que ves en el repositorio no es tu información —
 son solo plantillas de referencia que muestran la forma que van a tener tus
 archivos. No las edites pensando que son tuyas; tus datos reales se crean
 automáticamente en `data/` cuando corres `/aion-setup`.
+
+## Contribuciones y comunidad
+
+Aion es **open source** y se hizo para compartirse. Si eres de la **comunidad de
+Platzi** —o de cualquier lado— y se te ocurre una mejora, **eres bienvenido a
+sumarla**: abre un *issue* con tu idea o manda un *pull request* con tu cambio.
+Toda mejora que ayude a más gente a organizar mejor su día es bienvenida.
+
+Y si Aion te sirvió, el mejor agradecimiento es **recomendarlo**: si crees que a
+alguien le puede ayudar a descansar, entrenar o aprender mejor, pásale el
+proyecto. 🙌
+
+## Licencia
+
+Publicado bajo la **licencia MIT** — puedes usarlo, modificarlo y compartirlo
+libremente. Ver el archivo [`LICENSE`](LICENSE) para el detalle.
