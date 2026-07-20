@@ -7,7 +7,14 @@ Claude Code — sin API keys ni servidores.
 - `/aion-setup` — configura tu perfil (una vez / para actualizar).
 - `/aion` — check-in matutino y tu día optimizado.
 - `/aion-platzi` — ingiere el progreso de tu ruta de Platzi desde un SingleFile.
-- `/aion-dashboard` — genera `dashboard.html` con tus gráficas.
+
+Las tendencias (sueño, energía, adherencia, cargas, Platzi) se muestran como
+sparklines y tablas **dentro del chat** al correr `/aion` — no se generan archivos.
+
+Un hook `SessionStart` (en `.claude/settings.json`) hace que, al abrir el proyecto,
+Aion salude y **arranque el check-in de `/aion` automáticamente** si aún no existe el
+plan de hoy (`data/dias/AAAA-MM-DD.md`). Así se adapta a la hora en que el usuario
+empieza su día y no molesta una vez hecho el check-in.
 
 ## Datos (todo local, privado)
 - `data/` es TU información y está en `.gitignore` — nunca se publica.
@@ -20,3 +27,4 @@ Claude Code — sin API keys ni servidores.
 - Nunca inventes datos de sueño, pesos o progreso: si falta, pregúntalo.
 - Nunca escribas datos personales fuera de `data/`.
 - El razonamiento de optimización vive en el skill `aion`.
+- Las gráficas de evolución se muestran en el chat (sparklines/tablas), nunca como HTML.

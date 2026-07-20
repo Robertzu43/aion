@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "d=\"${CLAUDE_PROJECT_DIR:-.}\"; f=\"$d/data/dias/$(date +%F).md\"; if [ ! -f \"$d/data/perfil.json\" ]; then m=\"El usuario no ha configurado Aion todavia. Saludalo y sugierele correr /aion-setup.\"; elif [ ! -f \"$f\" ]; then m=\"Es un nuevo dia y el usuario aun no ha hecho su check-in de Aion de hoy. Saludalo con calidez, dile que es hora de su check-in y arranca el flujo de /aion usando el skill aion. Si el usuario abrio el proyecto para otra cosa, atiende eso.\"; else exit 0; fi; printf '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"%s\"}}' \"$m\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

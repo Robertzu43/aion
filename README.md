@@ -30,29 +30,44 @@ además de Claude Code.
 
 1. **Clona este repositorio** en tu computadora (o descárgalo como ZIP y
    descomprímelo).
-2. **Ábrelo en Claude Code** — entra a la carpeta del proyecto y arranca
-   Claude Code ahí.
-3. **Corre `/aion-setup`**. Es una entrevista corta y amigable: tus metas,
-   tu horario, qué tracker de sueño/actividad usas, tu campo de interés y tu
-   rutina de entrenamiento. Con eso Aion crea tu carpeta `data/` privada.
-4. **(Opcional) Trae tu progreso de Platzi.** Exporta tu ruta con la
-   extensión SingleFile (ver abajo cómo), guarda el archivo en
-   `data/platzi/`, y corre `/aion-platzi` para que Aion lo lea.
-5. **Cada mañana, corre `/aion`.** Te hace un check-in rápido (sueño,
-   entrenamiento, energía) y te entrega tu plan del día: ventana de
-   entrenamiento, plan de estudio, noticias de tu campo y qué cambió hoy.
-6. **Cuando quieras ver tu evolución, corre `/aion-dashboard`** y abre el
-   archivo `dashboard.html` que se genera en tu navegador. Ahí vas a ver tus
-   gráficas de sueño, energía, entrenamiento y progreso en Platzi a lo largo
-   del tiempo.
+2. **Ábrelo en Claude Code.** Elige la vía que uses:
+   - **Terminal:** entra a la carpeta y arranca Claude Code:
+     ```
+     cd aion
+     claude
+     ```
+   - **App de escritorio o web (claude.ai/code):** abre Claude Code y elige la
+     carpeta `aion` como proyecto.
+
+   Ya adentro, todos los `/comandos` de abajo se escriben **en el chat** de
+   Claude Code (empezando con `/`).
+3. **Corre `/aion-setup`**. Es una entrevista corta y amigable: tus metas, tu
+   horario, tu tracker, tu campo de interés y qué navegador usas. Tu **rutina de
+   entrenamiento la puedes entregar como quieras** —PDF, Word, Excel o texto
+   pegado—: Aion la lee, la ordena y te la muestra para confirmar. Con eso crea
+   tu carpeta `data/` privada.
+4. **(Opcional) Trae tu progreso de Platzi.** Corre `/aion-platzi`: Aion te
+   **abre tu ruta de Platzi en tu navegador** (con tu permiso), tú la guardas con
+   SingleFile en `data/platzi/` y Aion la lee. La primera vez te ayuda a instalar
+   SingleFile.
+5. **Cada mañana, solo abre Aion.** Al abrir el proyecto en Claude Code, Aion te
+   saluda y **arranca tu check-in solo** —a la hora que empieces tu día, sin
+   comando— si aún no lo hiciste hoy. (Si prefieres dispararlo tú, corre `/aion`.)
+   Te hace un check-in rápido (sueño, entrenamiento, energía) y te entrega tu plan
+   del día: ventana de entrenamiento, plan de estudio, noticias y qué cambió hoy.
+6. **Tu evolución aparece en el mismo chat.** Cada vez que corres `/aion`, Aion
+   te muestra una tira de tendencias —sueño, energía, adherencia de entreno,
+   progresión de cargas y progreso en Platzi— con mini-gráficas de texto, justo
+   antes del plan del día. No hay que abrir ningún archivo.
 
 ## Cómo exportar un SingleFile de Platzi
 
-Para que Aion pueda leer tu progreso en Platzi, necesitas guardar la página
-de tu ruta como un solo archivo HTML:
+`/aion-platzi` te abre la página en tu navegador para ahorrarte pasos; solo
+necesitas guardarla como un archivo HTML con SingleFile. El detalle completo:
 
-1. Instala la extensión **SingleFile** en tu navegador (está disponible para
-   Chrome, Firefox y navegadores basados en Chromium).
+1. Instala la extensión **SingleFile** (gratis):
+   - [Chrome, Edge o Brave](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle)
+   - [Firefox](https://addons.mozilla.org/firefox/addon/single-file/)
 2. Abre en tu navegador la página de tu ruta de Platzi (donde se ve tu
    progreso por curso y tu racha).
 3. Usa la extensión SingleFile para guardar esa página como un único

@@ -25,6 +25,18 @@ y los últimos `data/checkins.json` y `data/aprendizaje.json`.
 - Descanso reciente vs carga → recomienda ventana e intensidad de entreno hoy.
 - Progreso Platzi vs metas → recomienda qué estudiar y cuánto.
 
+## Tendencias en el chat (reemplaza al viejo dashboard HTML)
+Muestra la evolución SIEMPRE en el chat con sparklines Unicode y tablas cortas; nunca generes archivos.
+- **Sparkline:** mapea cada valor al rango [min,max] de la serie sobre 8 niveles `▁▂▃▄▅▆▇█`
+  (min→▁, max→█). Serie plana → todo `▄`. Faltantes → espacio.
+- Con los últimos ~14 días de `checkins.json` y `entrenamiento-log.json`, muestra una tira compacta:
+  - `Sueño   ▁▃▅▂▁▆█…  prom 7.1h`
+  - `Energía ▃▄▅▃▂▄█…  hoy 5/5`
+  - `Adherencia (sem) ██░ 2/3` (barras `█` = hecho, `░` = faltante hasta lo prescrito)
+  - `Cargas` por ejercicio clave: `Sentadilla 25→30kg ▲`, señala estancamientos con `→`.
+  - `Platzi 🔥 9 · progreso 3%→23%` (de `aprendizaje.json`).
+- Si una serie está vacía, dilo en una línea ("aún sin datos de X"); no rompas la tira.
+
 ## Contrato del plan del día (siempre, en orden)
 1. Resumen del día (una línea).
 2. Ventana de entrenamiento (hora/intensidad + por qué).

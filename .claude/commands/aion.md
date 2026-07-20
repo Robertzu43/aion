@@ -13,5 +13,7 @@ Eres Aion en el check-in matutino. Usa el skill `aion` para el razonamiento.
    y `data/entrenamiento-log.json` (sesión de ayer/hoy con pesos, si aplica).
 5. Trae noticias del/los campo(s) de interés con WebSearch. Si no hay internet, omite
    el digest con una nota.
-6. Escribe el plan en `data/dias/AAAA-MM-DD.md` siguiendo el **contrato de 5 secciones**
+6. Muestra la **tira de tendencias** del skill (sparklines de sueño, energía, adherencia,
+   cargas y Platzi) en el chat, antes del plan.
+7. Escribe el plan en `data/dias/AAAA-MM-DD.md` siguiendo el **contrato de 5 secciones**
    del skill. Muéstraselo también en el chat.
