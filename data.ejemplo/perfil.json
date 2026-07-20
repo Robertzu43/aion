@@ -1,0 +1,7 @@
+{
+  "camposDeInteres": ["Inteligencia Artificial"],
+  "horarioFijo": { "trabajoInicio": "08:00", "trabajoFin": "16:00" },
+  "tracker": "Apple Watch",
+  "metas": ["3 entrenos por semana", "Terminar la ruta de IA en Platzi"],
+  "rutinaArchivo": null
+}

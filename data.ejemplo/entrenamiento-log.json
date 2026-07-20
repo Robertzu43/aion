@@ -1,0 +1,10 @@
+[
+  {
+    "fecha": "2026-07-14",
+    "diaRutina": "Pierna",
+    "hecho": true,
+    "ejercicios": [
+      { "nombre": "Sentadilla", "series": [{ "reps": 5, "kg": 100 }] }
+    ]
+  }
+]

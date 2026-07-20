@@ -1,0 +1,6 @@
+# Datos personales del usuario — NUNCA se publican
+/data/
+# Dashboard generado
+dashboard.html
+# Ruido de SO
+.DS_Store
