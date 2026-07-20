@@ -27,6 +27,25 @@ que corre directamente dentro de Claude Code, en tu computadora, usando tu
 suscripción de Claude. Sin API keys, sin servidores, sin nada que instalar
 además de Claude Code.
 
+## Cómo se ve
+
+Una mañana con Aion se ve más o menos así (los datos son de ejemplo):
+
+```
+Tendencias (últimos días)
+  Sueño   ▅▃▂▁▃▆▇   prom 6.8h
+  Energía ▄▄▃▂▃▄▅   hoy 4/5
+  Adherencia (sem) ██░ 2/3
+  Sentadilla 25→30 kg ▲    Platzi 🔥 9 · 3%→23%
+
+Tu día
+  1. Resumen — día de foco medio; hoy priorizamos estudio sobre carga pesada.
+  2. Entrenamiento — 6:30 pm, intensidad moderada (dormiste 6.1 h anoche).
+  3. Estudio — Curso de Fundamentos de IA, lección 4 · 40 min.
+  4. Noticias de tu campo — 2 a 4 titulares de IA, con enlace.
+  5. Adaptaciones — trasnochaste → moví el entreno a la tarde y bajé el volumen.
+```
+
 ## Requisitos
 
 - Tener **Claude Code** instalado. Si aún no lo tienes, instálalo desde su

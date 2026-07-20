@@ -20,7 +20,10 @@ y los últimos `data/checkins.json` y `data/aprendizaje.json`.
 - Nunca inventes horas ni pesos: si falta un dato, pregúntalo.
 
 ## Cruce
-- Adherencia: rutina prescrita vs realizada esta semana.
+- Adherencia: rutina **prescrita** vs **realizada** esta semana. Deriva lo prescrito del
+  número de días de entreno por semana en `rutina-entrenamiento.md`; si la rutina no lo
+  deja claro, usa la meta de frecuencia semanal en `perfil.json` (ej. "3 entrenos/semana").
+  Lo realizado = sesiones con `hecho: true` esa semana en `entrenamiento-log.json`.
 - Progresión de cargas por ejercicio: ¿subió, se mantuvo, se estancó? Señala estancamientos.
 - Descanso reciente vs carga → recomienda ventana e intensidad de entreno hoy.
 - Progreso Platzi vs metas → recomienda qué estudiar y cuánto.

@@ -5,6 +5,12 @@
 **Estado:** Aprobado (diseño) — pendiente de plan de implementación
 **Contexto:** Entrega para el reto de Platzi "Claude Code para no programadores".
 
+> **Nota (actualización posterior):** Este spec es el diseño original. Después de
+> usarlo, el **dashboard HTML** se reemplazó por **tendencias en el chat**
+> (sparklines/tablas) y se eliminó el comando `/aion-dashboard`; además se agregó
+> un arranque automático del check-in vía un hook `SessionStart`. Fuente de verdad
+> actual: `README.md`, `CLAUDE.md`, los comandos y el skill `aion`.
+
 ---
 
 ## 1. Resumen
