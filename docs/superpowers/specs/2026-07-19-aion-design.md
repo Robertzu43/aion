@@ -71,7 +71,9 @@ aion/
 
 1. **`/aion-setup`** — configuración inicial (idempotente/actualizable).
    - Captura: metas, horario fijo (ej. trabajo 8–4), tracker que usa, **campo(s) de interés** para noticias, y la **rutina de entrenamiento** (pega texto o coloca un PDF/`.md` en `data/`).
+   - **Bootstrap en un clon nuevo:** `/aion-setup` **crea el árbol `data/`** (incluyendo subcarpetas `dias/` y `platzi/`) y **genera los archivos desde cero** a partir de la conversación — inicializa `entrenamiento-log.json`, `checkins.json` y `aprendizaje.json` como arreglos vacíos `[]`. **No copia** desde `data.ejemplo/`: esa carpeta es solo **referencia commiteada** para que un recién llegado vea la forma esperada de cada archivo.
    - Escribe `perfil.json` y `rutina-entrenamiento.md`.
+   - **Idempotente:** si `perfil.json` ya existe, actualiza los campos indicados sin sobrescribir el historial ni corromper el archivo.
 
 2. **`/aion-platzi`** — ingiere un SingleFile de Platzi.
    - Entrada: HTML exportado con la extensión SingleFile, colocado en `data/platzi/`.
@@ -82,6 +84,13 @@ aion/
    - **Check-in anclado en datos reales** (ver §6): Aion lee la rutina + `entrenamiento-log.json` de la semana antes de preguntar.
    - Cruza descanso + entrenamiento + progreso Platzi + metas + noticias del campo (WebSearch).
    - Escribe el **plan del día** en `data/dias/AAAA-MM-DD.md` y actualiza logs.
+   - **Contrato del plan del día** (secciones obligatorias, siempre en este orden):
+     1. **Resumen del día** — una línea con el foco del día.
+     2. **Ventana de entrenamiento** — hora/intensidad recomendada y por qué.
+     3. **Plan de estudio** — qué curso/lección de Platzi y cuánto tiempo.
+     4. **Digest del campo** — 2–4 noticias del campo de interés (con enlace si hay).
+     5. **Adaptaciones** — qué cambió hoy y por qué (ej. "trasnochaste → entreno movido a la tarde").
+     Si una sección no aplica (ej. sin internet → sin digest), se incluye igual con una nota explícita; nunca se omite del todo.
 
 4. **`/aion-dashboard`** — genera `dashboard.html` autocontenido con gráficas y lo deja listo para abrir en el navegador.
 
@@ -119,7 +128,9 @@ Aion **no hace preguntas genéricas**. Antes de preguntar, lee `rutina-entrenami
    "ejercicios": [{ "nombre": "Sentadilla", "series": [{ "reps": 5, "kg": 100 }] }] }]
 
 // checkins.json
-[{ "fecha": "2026-07-19", "suenoHoras": 5.5, "suenoCalidad": "baja",
+// suenoCalidad: enum fijo -> "mala" | "regular" | "buena" | "excelente"
+// energia: entero 1-5
+[{ "fecha": "2026-07-19", "suenoHoras": 5.5, "suenoCalidad": "mala",
    "energia": 2, "notas": "trasnoché" }]
 
 // aprendizaje.json  (snapshot por ingesta de SingleFile)
